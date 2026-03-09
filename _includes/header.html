@@ -1,0 +1,22 @@
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">Kyle <span>Huang</span></a>
+    <ul class="nav-links">
+      <li><a href="{{ '/#about'      | relative_url }}">About</a></li>
+      <li><a href="{{ '/#projects'   | relative_url }}">Projects</a></li>
+      <li><a href="{{ '/#experience' | relative_url }}">Experience</a></li>
+      <li><a href="{{ '/#interests'  | relative_url }}">Interests</a></li>
+      <li><a href="{{ '/#contact'    | relative_url }}" class="cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="{{ '/#about'      | relative_url }}" onclick="closeMobile()">About</a>
+    <a href="{{ '/#projects'   | relative_url }}" onclick="closeMobile()">Projects</a>
+    <a href="{{ '/#experience' | relative_url }}" onclick="closeMobile()">Experience</a>
+    <a href="{{ '/#interests'  | relative_url }}" onclick="closeMobile()">Interests</a>
+    <a href="{{ '/#contact'    | relative_url }}" onclick="closeMobile()">Contact</a>
+  </div>
+</nav>
